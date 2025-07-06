@@ -36,12 +36,6 @@ def load_data():
     #fac  = pd.read_csv("data/100_prof1.csv")    # facility data
     fac = pd.read_csv("data/100_fac.csv")
 
-    st.write("➤ prof.columns", prof.columns.tolist())
-    st.write("➤ prof.head()", prof.head(3))
-    st.write("➤ fac.columns", fac.columns.tolist())
-    st.write("➤ fac.head()",  fac.head(3))
-
-
     # 2. Rename profile columns that don’t match our variables
     prof = prof.rename(columns={
         "managment":              "management",
