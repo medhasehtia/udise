@@ -28,7 +28,7 @@ ACCENT    = "#4ECDC4"   # a fresh mint-green
 
 
 # ─── Load & Prepare Data ─────────────────────────────────────────────────────
-@st.cache_data
+#@st.cache_data
 def load_data():
     # 1. Read the raw CSVs
     #prof = pd.read_csv("data/100_prof1.csv")     # profile data
