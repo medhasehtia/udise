@@ -644,10 +644,10 @@ with tabs[2]:
         "Computers": df_filt["desktop"].mean(),
     })
 
-    d1, d2, d3 = st.columns(3)
-    d1.metric("Internet (avail %)", f"{dig_s['Internet']:.0%}")
-    d2.metric("ICT Labs (avail %)", f"{dig_s['ICT Labs']:.0%}")
-    d3.metric("Avg PCs/School", f"{dig_s['Computers']:.1f}")
+    # d1, d2, d3 = st.columns(3)
+    # d1.metric("Internet (avail %)", f"{dig_s['Internet']:.0%}")
+    # d2.metric("ICT Labs (avail %)", f"{dig_s['ICT Labs']:.0%}")
+    # d3.metric("Avg PCs/School", f"{dig_s['Computers']:.1f}")
 
 
     # ————— Metric selector —————
