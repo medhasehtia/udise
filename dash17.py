@@ -31,8 +31,12 @@ ACCENT    = "#4ECDC4"   # a fresh mint-green
 @st.cache_data
 def load_data():
     # 1. Read the raw CSVs
-    prof = pd.read_csv("/Users/medhasehtia/Documents/udise_dashboard/Data/100_prof1.csv")     # profile data
-    fac  = pd.read_csv("/Users/medhasehtia/Documents/udise_dashboard/Data/100_fac.csv")    # facility data
+    #prof = pd.read_csv("data/100_prof1.csv")     # profile data
+    prof = pd.read_csv("https://drive.google.com/uc?export=download&id=1yfHMqVnJj7LtdTRrAc--ijPSi1cZcesH")
+    #fac  = pd.read_csv("data/100_prof1.csv")    # facility data
+    fac = pd.read_csv("https://drive.google.com/uc?export=download&id=1bAZluj-ORyWRpr4q0mcwfVRYLi5swTm5")
+
+
 
     # 2. Rename profile columns that don’t match our variables
     prof = prof.rename(columns={
@@ -204,8 +208,7 @@ with tabs[0]:
     left, right = st.columns([2.5, 2], gap="large")
 
     # Choropleth
-
-    with open("Data/india_states.geojson") as f:
+    with open("data/india_states.geojson") as f:
         gj = json.load(f)
 
     # ————— Aggregate by state —————
@@ -418,8 +421,7 @@ with tabs[1]:
     left, right = st.columns([2.5, 2], gap="large")
 
     # Choropleth
-
-    with open("Data/india_states.geojson") as f:
+    with open("data/india_states.geojson") as f:
         gj = json.load(f)
 
     # ————— Aggregate by state —————
@@ -654,8 +656,7 @@ with tabs[2]:
     left, right = st.columns([2.5, 2], gap="large")
 
     # Choropleth
-
-    with open("Data/india_states.geojson") as f:
+    with open("data/india_states.geojson") as f:
         gj = json.load(f)
 
     # ————— Aggregate by state —————
