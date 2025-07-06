@@ -646,7 +646,7 @@ with tabs[2]:
     
     metrics = {
         "Internet":  "internet",
-        "ICT Labs":   "ict_lan",
+        "ICT Labs":   "ict_lab",
         "Computers":  "computer_yn",
     }
 
