@@ -36,8 +36,8 @@ def load_data():
     #fac  = pd.read_csv("data/100_prof1.csv")    # facility data
     fac = pd.read_csv("data/100_fac.csv")
 
-    st.write("📋 prof.columns:", prof.columns.tolist())
-    st.write("📋 fac.columns: ",  fac.columns.tolist())
+    #st.write("📋 prof.columns:", prof.columns.tolist())
+    #st.write("📋 fac.columns: ",  fac.columns.tolist())
 
     # 2. Rename profile columns that don’t match our variables
     prof = prof.rename(columns={
@@ -106,7 +106,15 @@ def load_data():
 
     return df
 
-df = load_data()
+#df = load_data()
+
+try:
+    df = load_data()
+    st.success("Data loaded successfully! Continuing with app...") # This will only show if load_data completes
+except Exception as e:
+    st.error(f"An error occurred during data loading: {e}")
+    st.exception(e) # This will print the full traceback on the app
+    st.stop() # Stop the app execution if data loading fails
 
 # ─── Sidebar Filters ─────────────────────────────────────────────────────────
 st.sidebar.header("Filters")
