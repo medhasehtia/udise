@@ -32,9 +32,9 @@ ACCENT    = "#4ECDC4"   # a fresh mint-green
 def load_data():
     # 1. Read the raw CSVs
     #prof = pd.read_csv("data/100_prof1.csv")     # profile data
-    prof = pd.read_csv("https://drive.google.com/uc?export=download&id=1yfHMqVnJj7LtdTRrAc--ijPSi1cZcesH")
+    prof = pd.read_csv("data/100_prof1.csv")
     #fac  = pd.read_csv("data/100_prof1.csv")    # facility data
-    fac = pd.read_csv("https://drive.google.com/uc?export=download&id=1bAZluj-ORyWRpr4q0mcwfVRYLi5swTm5")
+    fac = pd.read_csv("data/100_fac.csv")
 
 
     # 2. Rename profile columns that don’t match our variables
