@@ -208,7 +208,7 @@ with tabs[0]:
     left, right = st.columns([2.5, 2], gap="large")
 
     # Choropleth
-    with open("data/india_states.geojson") as f:
+    with open("india_states.geojson") as f:
         gj = json.load(f)
 
     # ————— Aggregate by state —————
@@ -421,7 +421,7 @@ with tabs[1]:
     left, right = st.columns([2.5, 2], gap="large")
 
     # Choropleth
-    with open("data/india_states.geojson") as f:
+    with open("india_states.geojson") as f:
         gj = json.load(f)
 
     # ————— Aggregate by state —————
@@ -656,7 +656,7 @@ with tabs[2]:
     left, right = st.columns([2.5, 2], gap="large")
 
     # Choropleth
-    with open("data/india_states.geojson") as f:
+    with open("india_states.geojson") as f:
         gj = json.load(f)
 
     # ————— Aggregate by state —————
