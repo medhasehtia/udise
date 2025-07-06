@@ -37,7 +37,6 @@ def load_data():
     fac = pd.read_csv("https://drive.google.com/uc?export=download&id=1bAZluj-ORyWRpr4q0mcwfVRYLi5swTm5")
 
 
-
     # 2. Rename profile columns that don’t match our variables
     prof = prof.rename(columns={
         "managment":              "management",
